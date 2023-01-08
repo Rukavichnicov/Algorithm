@@ -1,0 +1,11 @@
+{
+    "name": "myproject/algorithm",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
