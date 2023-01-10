@@ -23,7 +23,7 @@ class BubbleSorter implements Sorter
                     $tmp_num_arr = $array[$j];
                     $array[$j] = $array[$i];
                     $array[$i] = $tmp_num_arr;
-                    $this->countIterations++;
+                    $this->countIterations++; // подсчет итераций, функциональной нагрузки не несет
                 }
             }
         }

@@ -14,7 +14,7 @@ class QuickSorter implements Sorter
     {
         $lengthArray = count($array);
         if ($lengthArray < 2) {
-            $this->countIterations++;
+            $this->countIterations++; // подсчет итераций, функциональной нагрузки не несет
             return $array;
         } else {
             $less = [];
@@ -26,7 +26,7 @@ class QuickSorter implements Sorter
                 } else {
                     $greater[] = $array[$i];
                 }
-                $this->countIterations++;
+                $this->countIterations++; // подсчет итераций, функциональной нагрузки не несет
             }
             return array_merge($this->sort($less), [$pivot], $this->sort($greater));
         }
